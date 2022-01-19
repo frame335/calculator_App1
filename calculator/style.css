@@ -1,0 +1,74 @@
+body {
+  /* overflow: hidden; */
+  background: linear-gradient(#f4f4ed, white);
+}
+
+.container {
+  border: 1px solid black;
+
+  width: 95%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.calculator {
+  border: 1px solid black;
+
+  width: 370px;
+  margin: auto;
+  border-radius: 2px;
+  background: #f2f2f2;
+  padding: 15px 15px 20px 20px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  border: none;
+}
+
+#userInput {
+  /* อันนี้เปนการทำกล่องให้ input */
+  box-sizing: border-box;
+  width: 100%;
+  padding: 40px 5px;
+  background: whitesmoke;
+  text-align: right;
+  /* direction เปนการกำหนดทิศทางการไปของตัวอักษรตอนเติมค่าเข้าไปจาก ซ้ายไปขวา */
+  direction: ltr;
+  /* outline เวลาคลิ้กก็จะไม่มีเส้นขึ้น */
+  outline: none;
+  border: none; /* อันนี้เปนเอากรอบเส้นออก*/
+}
+
+.btn {
+  width: 24%;
+  height: 45px;
+  border-radius: 1 px;
+  border: none;
+  outline: none;
+  margin-top: 3px;
+  background: #ededed;
+}
+
+.btnequal {
+  width: 99.2%;
+  height: 45px;
+  border-radius: 1 px;
+  border: none;
+  outline: none;
+  margin-top: 3px;
+  background: #ededed;
+}
+
+/* :hover = ใช้ในกรณีที่ต้องการดักจับเหตุการณ์ ผู้ใช้งานวางเมาส์ไว้บน Elements ต่าง ๆ  */
+.btn:hover,
+.btnequal:hover {
+  background-color: rgb(128, 128, 128, 0.1);
+}
+
+@media (max-width: 320px) {
+  .btn {
+    width: 23%;
+  }
+}
